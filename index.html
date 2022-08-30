@@ -5,36 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  <main class="container">
+    <img class="img-b" src="./images/illustration-box-desktop.svg" alt="box">
+    <div class="img-container">
+      <img class="img" src="./images/illustration-woman-online-desktop.svg" alt="woman online">
+    </div>
+    <div class="txt-container">
+      <h1 class="title">FAQ</h1>
+      <div class="sections">
+        <section class="section">
+          <p class="question">
+            How many team members can I invite?
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </p>
+          <p class="answer hidden">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+          </p>
+        </section>
+        <section class="section">
+          <p class="question selected">
+            What is the maximum file upload size?
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow rotated">
+          </p>
+          <p class="answer ">  
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </section>
+        <section class="section">
+          <p class="question">
+            How do I reset my password?
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </p>
+          <p class="answer hidden">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </section>
+        <section class="section">
+          <p class="question">
+            Can I cancel my subscription?
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </p>
+          <p class="answer hidden">
+            Yes! Send us a message and we'll process your request no questions asked.
+          </p>
+        </section>
+        <section class="section">
+          <p class="question">
+            Do you provide additional support?
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </p>
+          <p class="answer hidden">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </section>
+      </div>
+        
+    </div>
+      
+    </main>
+  </body>
+  </html>
